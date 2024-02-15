@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Archivo Black", sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+        .header{
+            height: 40px;
+            background-color: #2C3041;
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            padding: 20px;
+            /* flex-wrap: wrap; */
+        }
+        .redcircle{
+            height: 30px;
+            width: 30px;
+            background: #FC6158;
+            border-radius: 50%;
+        }
+        .orangecircle{
+            height: 30px;
+            width: 30px;
+            background: #FCA062;
+            border-radius: 50%;
+        }
+        .greencircle{
+            height: 30px;
+            width: 30px;
+            background: #01A886;
+            border-radius: 50%;
+        }
+        .whitebar{
+            height: 30px;
+            width: 100%;
+            background-color: #fff;
+            justify-self: stretch;
+            border-radius: 5px;
+        }
+        .container{
+            height: auto;
+            width: 100vw;
+            background: #2C3041;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            gap: 30px;
+        }
+        #heading{
+            color: white;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .gridlink{
+            /* margin-top: 30px; */
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 10px;
+        }
+        .gridlink a{
+            width: 350px;
+            height: 80px;
+            /* background: #000; */
+            color: white;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #grid1{
+            background: #FC6158;
+        }
+        #grid2{
+            background:#FE825C;
+        }
+        #grid3{
+            background: #FCA062;
+        }
+        #grid4{
+            background: #01A886;
+        }
+        #grid5{
+            background: #34DABA;
+        }
+        #grid6{
+            /* display: flex;
+            justify-content: center ; */
+            background: #019801 ;
+            position: relative;
+        }
+        #grid6 span{
+            /* align-self: flex-end; */
+            position: absolute;
+            right: 8%;
+            top: 20%;
+
+        }
+        .footer{
+            /* height: 40px; */
+            background: #2C3041;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="redcircle"></div>
+        <div class="orangecircle"></div>
+        <div class="greencircle"></div>
+        <div class="whitebar"></div>
+    </div>
+    <div class="container">
+        <div id="heading"><H1>Welcome to Grid Template</H1></div>
+        <div class="gridlink">
+            <a href="./grid1.html" id="grid1">GRID 1</a>
+            <a href="./grid2.html" id="grid2">GRID 2</a>
+            <a href="./grid3.html" id="grid3">GRID 3</a>
+            <a href="./grid4.html" id="grid4">GRID 4</a>
+            <a href="./grid5.html" id="grid5">GRID 5</a>
+            <a href="./Creeper Grid/index.html" id="grid6">Special Creeper <span><img src="/creeper.png" alt="creeper" width="50px"></span> </a>
+        </div>
+    </div>
+    <div class="footer" >
+        By ME
+    </div>
+</body>
+</html>

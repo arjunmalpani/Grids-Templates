@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .header{
+            height: 40px;
+            background-color: #2C3041;
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            padding: 20px;
+            /* flex-wrap: wrap; */
+        }
+        .redcircle{
+            height: 30px;
+            width: 30px;
+            background: #FC6158;
+            border-radius: 50%;
+        }
+        .orangecircle{
+            height: 30px;
+            width: 30px;
+            background: #FCA062;
+            border-radius: 50%;
+        }
+        .greencircle{
+            height: 30px;
+            width: 30px;
+            background: #01A886;
+            border-radius: 50%;
+        }
+        .whitebar{
+            height: 30px;
+            width: 100%;
+            background-color: #fff;
+            justify-self: stretch;
+            border-radius: 5px;
+        }
+        .container{
+            height: calc(100% - 40px);
+            width: 100%;
+            background-color: #2C3041;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            padding: 1rem;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .A{
+            background:#FC6158 ;
+        }
+        .B{
+            background:#FE825C ;
+        }
+        .C{
+            background: #FCA062;
+        }
+        .D{
+            background:#01A886 ;
+        }
+        .E{
+            background:#19C1A3 ;
+        }
+        .F{
+            background: #34DBBA;
+        }
+        @media (min-width:630px){
+            .container{
+                /* height: auto; */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="redcircle"></div>
+        <div class="orangecircle"></div>
+        <div class="greencircle"></div>
+        <div class="whitebar"></div>
+    </div>
+    <div class="container">
+        <div class="item A"></div>
+        <div class="item B"></div>
+        <div class="item C"></div>
+        <div class="item D"></div>
+        <div class="item E"></div>
+        <div class="item F"></div>
+    </div>
+</body>
+</html>

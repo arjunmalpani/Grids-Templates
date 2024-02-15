@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 5</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .header{
+            height: 40px;
+            background-color: #2C3041;
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            padding: 20px;
+            /* flex-wrap: wrap; */
+        }
+        .redcircle{
+            height: 30px;
+            width: 30px;
+            background: #FC6158;
+            border-radius: 50%;
+        }
+        .orangecircle{
+            height: 30px;
+            width: 30px;
+            background: #FCA062;
+            border-radius: 50%;
+        }
+        .greencircle{
+            height: 30px;
+            width: 30px;
+            background: #01A886;
+            border-radius: 50%;
+        }
+        .whitebar{
+            height: 30px;
+            width: 100%;
+            background-color: #fff;
+            justify-self: stretch;
+            border-radius: 5px;
+        }
+        .container{
+            height: calc(100% - 40px);
+            width: 100%;
+            background-color: #2C3041;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(9,1fr);
+            padding: 1rem;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .item1{
+            background: #01A787;
+        }
+        .item2{
+            background:#FD825C ;
+        }
+        .item3{
+            background: #1BC1A1;
+        }
+        .item4{
+            background: #FC6057;
+        }
+        .item5{
+            background: #34DABA;
+        }
+        .item6{
+            background: #FD825C;
+        }
+        .item7{
+            background: #FDA061;
+        }
+        .item8{
+            background: #01A787;
+        }
+        .item9{
+            background: #FD825C;
+        }
+        .item10{
+            background: #1BC1A1;
+        }
+        .item11{
+            background: #FDA061;
+        }
+        .item12{
+            background: #FC6057;
+        }
+        .item13{
+            background:#01A787 ;
+        }
+        .item14{
+            background: #FC6057;
+        }
+        .item15{
+            background:#34DABA ;
+        }
+        .item16{
+            background:#FD825C ;
+        }
+        .item17{
+            background: #01A787;
+        }
+        .item18{
+            background:#34DABA ;
+        }
+        @media (min-width:630px){
+            .container{
+                /* height: auto; */
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: repeat(3,1fr);
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <div class="redcircle"></div>
+        <div class="orangecircle"></div>
+        <div class="greencircle"></div>
+        <div class="whitebar"></div>
+    </div>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
+        <div class="item9"></div>
+        <div class="item10"></div>
+        <div class="item11"></div>
+        <div class="item12"></div>
+        <div class="item13"></div>
+        <div class="item14"></div>
+        <div class="item15"></div>
+        <div class="item16"></div>
+        <div class="item17"></div>
+        <div class="item18"></div>
+    </div>
+</body>
+</html>
